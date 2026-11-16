@@ -9,6 +9,7 @@
     <Description>Official .NET client for the Transynq TMS API.</Description>
     <PackageTags>transynq;tms;transport;logistics;sdk</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>transynq-icon-128.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/qadir0108/transynq-sdk-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -33,6 +34,7 @@
   <ItemGroup>
     <InternalsVisibleTo Include="Transynq.Sdk.Tests" />
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\assets\brand\transynq-icon-128.png" Pack="true" PackagePath="\" Visible="false" />
   </ItemGroup>
 
 </Project>

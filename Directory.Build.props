@@ -9,6 +9,7 @@
     <ContinuousIntegrationBuild Condition="'$(CI)' == 'true' or '$(TF_BUILD)' == 'true'">true</ContinuousIntegrationBuild>
     <Authors>Transynq</Authors>
     <Company>Transynq</Company>
-    <Copyright>Copyright (c) Transynq. All rights reserved.</Copyright>
+    <Copyright>Copyright (c) 2026 Transynq</Copyright>
+    <Product>Transynq TMS SDK</Product>
   </PropertyGroup>
 </Project>

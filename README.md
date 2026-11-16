@@ -1,8 +1,18 @@
-# Transynq .NET SDK
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-logo-light.png">
+    <img alt="Transynq" src="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-logo-light.png" width="360">
+  </picture>
+</p>
 
-The official .NET client for the **Transynq TMS API** (`/api/v1`): every one of the API's 705 operations, grouped by
-area (jobs, bookings, dispatch, invoicing, customers, driver app...), with typed models, authentication, retries, typed errors,
-paging, optimistic concurrency, file transfer and long-running operations handled for you.
+<h1 align="center">.NET SDK for the Transynq TMS API</h1>
+
+<p align="center"><em>Intelligent Transport Operations</em></p>
+
+The official .NET client for **Transynq TMS** (`/api/v1`): all 705 operations of the API, grouped by area (jobs,
+bookings, dispatch, invoicing, customers, driver app...), with typed models, authentication, retries, typed errors, paging,
+optimistic concurrency, file transfer and long-running operations handled for you.
 
 - Package: `Transynq.Sdk` - version 1.0.0 (semantic versioning, independent of the API version)
 - Generated from the Transynq API OpenAPI 3.1 contract v1.0.0 plus a hand-written core
@@ -104,3 +114,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT
 ## Licence
 
 [MIT](LICENSE) - Copyright (c) 2026 Transynq.
+
+The Transynq name and logos are trademarks of Transynq and are not covered by the MIT licence; you may use them only to refer to Transynq.

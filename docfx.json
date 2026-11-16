@@ -5,26 +5,59 @@
       "src": [
         {
           "src": "src/Transynq.Sdk",
-          "files": ["Transynq.Sdk.csproj"]
+          "files": [
+            "Transynq.Sdk.csproj"
+          ]
         }
       ],
-      "properties": { "TargetFramework": "net8.0" },
+      "properties": {
+        "TargetFramework": "net8.0"
+      },
       "dest": "_api"
     }
   ],
   "build": {
     "content": [
-      { "files": ["_api/**.yml", "_api/index.md"] },
-      { "files": ["docs/**.md", "README.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md", "toc.yml"] }
+      {
+        "files": [
+          "_api/**.yml",
+          "_api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "docs/**.md",
+          "README.md",
+          "CHANGELOG.md",
+          "CONTRIBUTING.md",
+          "SECURITY.md",
+          "CODE_OF_CONDUCT.md",
+          "toc.yml"
+        ]
+      }
     ],
     "resource": [
-      { "files": ["LICENSE", "examples/**/*.cs"] }
+      {
+        "files": [
+          "LICENSE",
+          "examples/**/*.cs",
+          "assets/brand/*.png",
+          "assets/brand/favicon.ico"
+        ]
+      }
     ],
     "output": "_site",
-    "template": ["default", "modern"],
+    "template": [
+      "default",
+      "modern",
+      "templates/transynq"
+    ],
     "globalMetadata": {
       "_appName": "Transynq .NET SDK",
       "_appTitle": "Transynq .NET SDK",
+      "_appLogoPath": "assets/brand/transynq-icon-64.png",
+      "_appFaviconPath": "assets/brand/favicon.ico",
+      "_appFooter": "<span>&copy; 2026 Transynq &middot; MIT licence &middot; <em>Intelligent Transport Operations</em></span>",
       "_enableSearch": true
     }
   }

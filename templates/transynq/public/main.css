@@ -1,0 +1,70 @@
+/* Transynq brand overrides for the DocFX "modern" template (Bootstrap 5.3 variables). */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #2563EB;
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-secondary: #6B7280;
+  --bs-info: #06B6D4;
+  --bs-success: #10B981;
+  --bs-warning: #F59E0B;
+  --bs-danger: #EF4444;
+  --bs-link-color: #2563EB;
+  --bs-link-color-rgb: 37, 99, 235;
+  --bs-link-hover-color: #8B5CF6;
+  --bs-link-hover-color-rgb: 139, 92, 246;
+  --bs-body-color: #1F2937;
+  --bs-body-bg: #FFFFFF;
+  --bs-tertiary-bg: #F8FAFC;
+  --bs-border-color: #E5E7EB;
+  --bs-body-font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bs-font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: #3B82F6;
+  --bs-primary-rgb: 59, 130, 246;
+  --bs-link-color: #60A5FA;
+  --bs-link-color-rgb: 96, 165, 250;
+  --bs-link-hover-color: #A78BFA;
+  --bs-link-hover-color-rgb: 167, 139, 250;
+  --bs-body-color: #E5E7EB;
+  --bs-body-bg: #0B1220;
+  --bs-tertiary-bg: #1F2937;
+  --bs-border-color: #1F2937;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+code, pre, kbd, samp {
+  font-family: var(--bs-font-monospace);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+header .navbar {
+  border-bottom: 3px solid #2563EB;
+}
+
+#logo {
+  height: 32px;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  --bs-btn-bg: #2563EB;
+  --bs-btn-border-color: #2563EB;
+  --bs-btn-hover-bg: #1D4ED8;
+  --bs-btn-hover-border-color: #1D4ED8;
+}
+
+footer {
+  color: #6B7280;
+}
