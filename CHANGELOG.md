@@ -5,6 +5,13 @@ and the project uses [semantic versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-16
+
+### Fixed
+
+- The nuget.org package page now renders the README: the package ships a Markdown-only `PACKAGE.md`, since nuget.org does not render HTML.
+- README links to the licence, docs and examples are absolute, so they work on nuget.org.
+
 ## [1.0.0] - 2026-11-16
 
 ### Added
@@ -18,5 +25,6 @@ and the project uses [semantic versioning](https://semver.org/).
 - Request/response hooks with secret redaction, correlation ids and `X-Api-Version` on every response.
 - Transynq branding for README, docs and package metadata.
 
-[Unreleased]: https://github.com/qadir0108/transynq-sdk-dotnet/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/qadir0108/transynq-sdk-dotnet/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/qadir0108/transynq-sdk-dotnet/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/qadir0108/transynq-sdk-dotnet/releases/tag/v1.0.0

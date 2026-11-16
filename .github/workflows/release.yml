@@ -92,6 +92,6 @@ jobs:
         env:
           NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
         run: |
-          for package in artifacts/*.nupkg artifacts/*.snupkg; do
+          for package in artifacts/*.nupkg; do  # pushing a .nupkg also uploads its .snupkg
             dotnet nuget push "${package}" --api-key "${NUGET_API_KEY}" --source https://api.nuget.org/v3/index.json --skip-duplicate
           done

@@ -12,8 +12,8 @@
   <a href="https://www.nuget.org/packages/Transynq.Sdk"><img alt="NuGet" src="https://img.shields.io/nuget/v/Transynq.Sdk?logo=nuget&color=2563EB"></a>
   <a href="https://www.nuget.org/packages/Transynq.Sdk"><img alt="Downloads" src="https://img.shields.io/nuget/dt/Transynq.Sdk?color=06B6D4"></a>
   <img alt="Runtime" src="https://img.shields.io/badge/.NET-8%20%7C%2010-512BD4?logo=dotnet">
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8B5CF6"></a>
-  <a href="docs/"><img alt="Docs" src="https://img.shields.io/badge/docs-guides-2563EB"></a>
+  <a href="https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8B5CF6"></a>
+  <a href="https://github.com/qadir0108/transynq-sdk-dotnet/tree/main/docs/"><img alt="Docs" src="https://img.shields.io/badge/docs-guides-2563EB"></a>
   <img alt="API operations" src="https://img.shields.io/badge/API%20operations-705-0B1220">
 </p>
 
@@ -21,9 +21,9 @@ The official .NET client for **Transynq TMS** (`/api/v1`): all 705 operations of
 bookings, dispatch, invoicing, customers, driver app...), with typed models, authentication, retries, typed errors, paging,
 optimistic concurrency, file transfer and long-running operations handled for you.
 
-- Package: `Transynq.Sdk` - version 1.0.0 (semantic versioning, independent of the API version)
+- Package: `Transynq.Sdk` - version 1.0.1 (semantic versioning, independent of the API version)
 - Generated from the Transynq API OpenAPI 3.1 contract v1.0.0 plus a hand-written core
-- Licence: [MIT](LICENSE)
+- Licence: [MIT](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/LICENSE)
 
 ## Requirements
 
@@ -78,28 +78,28 @@ var who = await client.Authentication.GetApiClientAsync();     // { companyId, d
 Console.WriteLine(who.Data.AsText());
 ```
 
-See [docs/authentication.md](docs/authentication.md) for sessions, CSRF and driver tokens.
+See [docs/authentication.md](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/authentication.md) for sessions, CSRF and driver tokens.
 
 ## Documentation
 
-- [Getting started](docs/getting-started.md)
-- [Authentication](docs/authentication.md)
-- [Configuration](docs/configuration.md)
-- [Error handling](docs/error-handling.md)
-- [Pagination and grid queries](docs/pagination.md)
-- [Concurrency (ETag / If-Match)](docs/concurrency.md)
-- [Idempotency](docs/idempotency.md)
-- [Long-running operations](docs/long-running-operations.md)
-- [File upload and download](docs/files.md)
-- [Logging and observability](docs/logging-and-observability.md)
-- [Dates, money and enums (type mapping)](docs/types.md)
-- [Testing your integration](docs/testing.md)
-- [Versioning and compatibility](docs/versioning.md)
-- [Troubleshooting and FAQ](docs/troubleshooting.md)
-- [Resource index (every operation, generated)](docs/resources/README.md)
+- [Getting started](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/getting-started.md)
+- [Authentication](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/authentication.md)
+- [Configuration](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/configuration.md)
+- [Error handling](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/error-handling.md)
+- [Pagination and grid queries](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/pagination.md)
+- [Concurrency (ETag / If-Match)](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/concurrency.md)
+- [Idempotency](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/idempotency.md)
+- [Long-running operations](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/long-running-operations.md)
+- [File upload and download](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/files.md)
+- [Logging and observability](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/logging-and-observability.md)
+- [Dates, money and enums (type mapping)](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/types.md)
+- [Testing your integration](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/testing.md)
+- [Versioning and compatibility](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/versioning.md)
+- [Troubleshooting and FAQ](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/troubleshooting.md)
+- [Resource index (every operation, generated)](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/docs/resources/README.md)
 
 Runnable samples of real flows (sign in, list and page grid rows, create a booking idempotently, update with If-Match, list
-invoices, upload a POD, wait on a long operation) are in [`examples/Transynq.Sdk.Examples/Program.cs`](examples/Transynq.Sdk.Examples/Program.cs).
+invoices, upload a POD, wait on a long operation) are in [`examples/Transynq.Sdk.Examples/Program.cs`](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/examples/Transynq.Sdk.Examples/Program.cs).
 
 The API reference is generated from the XML documentation comments with DocFX (`docfx.json` in this repository):
 
@@ -111,15 +111,15 @@ docfx docfx.json   # writes _site/ (not checked in)
 ## Support
 
 - Bugs and feature requests: [GitHub issues](https://github.com/qadir0108/transynq-sdk-dotnet/issues) (use the templates; never paste real keys, passwords or customer data).
-- Security problems: see [SECURITY.md](SECURITY.md) - do not open a public issue.
+- Security problems: see [SECURITY.md](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/SECURITY.md) - do not open a public issue.
 - When the API answers with an error, quote its correlation id (`correlationId` on the error).
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md).
+See [CONTRIBUTING.md](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/CODE_OF_CONDUCT.md).
 
 ## Licence
 
-[MIT](LICENSE) - Copyright (c) 2026 Transynq.
+[MIT](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/LICENSE) - Copyright (c) 2026 Transynq.
 
 The Transynq name and logos are trademarks of Transynq and are not covered by the MIT licence; you may use them only to refer to Transynq.
