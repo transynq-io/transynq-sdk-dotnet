@@ -10,4 +10,4 @@
 - Supported runtimes: .NET 8 and .NET 10 (the package targets `net8.0` and `net10.0`). A target framework leaves the package in a
   minor release after its Microsoft end of support.
 
-See the [changelog](https://github.com/qadir0108/transynq-sdk-dotnet/blob/main/CHANGELOG.md) for the changes of each release.
+See the [changelog](https://github.com/transynq-io/transynq-sdk-dotnet/blob/main/CHANGELOG.md) for the changes of each release.

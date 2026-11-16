@@ -17,7 +17,7 @@ short-lived OIDC token, `NuGet/login@v1` exchanges it for a temporary API key, a
    |---|---|
    | Policy name | `transynq-sdk-dotnet release` |
    | Package owner | your nuget.org user (or organisation) |
-   | Repository owner | `qadir0108` |
+   | Repository owner | `transynq-io` |
    | Repository | `transynq-sdk-dotnet` |
    | Workflow file | `release.yml` |
    | Environment | `release` |
