@@ -1,0 +1,11 @@
+bin/
+obj/
+_site/
+_api/
+*.user
+*.suo
+.vs/
+TestResults/
+artifacts/
+*.nupkg
+*.snupkg

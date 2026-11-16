@@ -1,0 +1,6 @@
+- name: Guide
+  href: docs/README.md
+- name: API reference
+  href: _api/
+- name: Changelog
+  href: CHANGELOG.md

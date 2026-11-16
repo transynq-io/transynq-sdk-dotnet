@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/examples/">
+    <Project Path="examples/Transynq.Sdk.Examples/Transynq.Sdk.Examples.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Transynq.Sdk/Transynq.Sdk.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Transynq.Sdk.Tests/Transynq.Sdk.Tests.csproj" />
+  </Folder>
+</Solution>
