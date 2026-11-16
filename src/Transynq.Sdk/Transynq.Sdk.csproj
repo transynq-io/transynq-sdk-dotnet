@@ -5,7 +5,7 @@
     <RootNamespace>Transynq.Sdk</RootNamespace>
     <AssemblyName>Transynq.Sdk</AssemblyName>
     <PackageId>Transynq.Sdk</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Description>Official .NET client for the Transynq TMS API.</Description>
     <PackageTags>transynq;tms;transport;logistics;sdk</PackageTags>
     <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
