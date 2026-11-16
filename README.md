@@ -1,14 +1,21 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-logo-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-logo-light.png">
-    <img alt="Transynq" src="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-logo-light.png" width="360">
-  </picture>
+  <img alt="Transynq - Intelligent Transport Operations" src="https://raw.githubusercontent.com/qadir0108/transynq-sdk-dotnet/main/assets/brand/transynq-readme-banner.png" width="720">
 </p>
 
 <h1 align="center">.NET SDK for the Transynq TMS API</h1>
 
 <p align="center"><em>Intelligent Transport Operations</em></p>
+
+<p align="center">
+  <a href="https://github.com/qadir0108/transynq-sdk-dotnet/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/qadir0108/transynq-sdk-dotnet/actions/workflows/ci.yml/badge.svg?branch=main"></a>
+  <a href="https://github.com/qadir0108/transynq-sdk-dotnet/actions/workflows/release.yml"><img alt="Release" src="https://github.com/qadir0108/transynq-sdk-dotnet/actions/workflows/release.yml/badge.svg"></a>
+  <a href="https://www.nuget.org/packages/Transynq.Sdk"><img alt="NuGet" src="https://img.shields.io/nuget/v/Transynq.Sdk?logo=nuget&color=2563EB"></a>
+  <a href="https://www.nuget.org/packages/Transynq.Sdk"><img alt="Downloads" src="https://img.shields.io/nuget/dt/Transynq.Sdk?color=06B6D4"></a>
+  <img alt="Runtime" src="https://img.shields.io/badge/.NET-8%20%7C%2010-512BD4?logo=dotnet">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8B5CF6"></a>
+  <a href="docs/"><img alt="Docs" src="https://img.shields.io/badge/docs-guides-2563EB"></a>
+  <img alt="API operations" src="https://img.shields.io/badge/API%20operations-705-0B1220">
+</p>
 
 The official .NET client for **Transynq TMS** (`/api/v1`): all 705 operations of the API, grouped by area (jobs,
 bookings, dispatch, invoicing, customers, driver app...), with typed models, authentication, retries, typed errors, paging,

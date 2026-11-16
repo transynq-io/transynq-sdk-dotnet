@@ -1,0 +1,97 @@
+name: release
+
+# Publishes Transynq.Sdk to nuget.org with NuGet trusted publishing (OIDC; no long-lived API key).
+# Trigger: a GitHub release with tag vX.Y.Z matching <Version> in src/Transynq.Sdk/Transynq.Sdk.csproj,
+# or a manual run (dry run by default: build, test and pack only). See PUBLISHING.md.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "Build, test and pack only (no push to nuget.org)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+
+      - name: Check the tag matches the package version
+        shell: bash
+        run: |
+          version="$(dotnet msbuild src/Transynq.Sdk/Transynq.Sdk.csproj -getProperty:Version)"
+          echo "Package version: ${version}"
+          if [ "${GITHUB_EVENT_NAME}" = "release" ] && [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "::error::Release tag ${GITHUB_REF_NAME} does not match package version v${version}"
+            exit 1
+          fi
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build -c Release --no-restore
+
+      - name: Test
+        run: dotnet test -c Release --no-build
+
+      - name: Pack
+        run: dotnet pack src/Transynq.Sdk -c Release --no-build -o artifacts
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nuget-packages
+          path: |
+            artifacts/*.nupkg
+            artifacts/*.snupkg
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && inputs.dry-run == false)
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: read
+      id-token: write   # OIDC token for NuGet trusted publishing
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: nuget-packages
+          path: artifacts
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: NuGet login (trusted publishing)
+        id: login
+        uses: NuGet/login@v1
+        with:
+          user: ${{ vars.NUGET_USER }}
+
+      - name: Push packages
+        shell: bash
+        env:
+          NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
+        run: |
+          for package in artifacts/*.nupkg artifacts/*.snupkg; do
+            dotnet nuget push "${package}" --api-key "${NUGET_API_KEY}" --source https://api.nuget.org/v3/index.json --skip-duplicate
+          done

@@ -29,6 +29,11 @@ Warnings are errors (`TreatWarningsAsErrors`, `AnalysisLevel` latest-recommended
 4. Make sure CI is green.
 5. Never commit secrets, real hostnames or customer data.
 
+## Releases
+
+Releases are published by GitHub Actions from a GitHub release tagged `vX.Y.Z`; see [PUBLISHING.md](PUBLISHING.md) for the
+one-time registry setup and the release procedure.
+
 ## Reporting security problems
 
 See [SECURITY.md](SECURITY.md).
