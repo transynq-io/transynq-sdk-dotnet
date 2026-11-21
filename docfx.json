@@ -57,8 +57,9 @@
       "_appTitle": "Transynq .NET SDK",
       "_appLogoPath": "assets/brand/transynq-icon-64.png",
       "_appFaviconPath": "assets/brand/favicon.ico",
-      "_appFooter": "<span>&copy; 2026 Transynq &middot; MIT licence &middot; <em>Intelligent Transport Operations</em></span>",
-      "_enableSearch": true
+      "_appFooter": "<span>&copy; 2026 <a href=\"https://transynq.io/\">Transynq</a> &middot; <a href=\"https://transynq.io/transport-management-system\">Transynq TMS - transport management system</a> &middot; MIT licence</span>",
+      "_enableSearch": true,
+      "_description": "Official .NET SDK for Transynq TMS, the transport management system for carriers, fleet operators, 3PLs, brokers and shippers: bookings, dispatch, live tracking, driver POD, invoicing and costing through the Transynq API."
     }
   }
 }
