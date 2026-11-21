@@ -134,7 +134,7 @@ public sealed partial class TransynqClient : IDisposable
 public static class SdkInfo
 {
     /// <summary>The SDK version (semantic, independent of the API version).</summary>
-    public const string Version = "1.0.2";
+    public const string Version = "1.0.3";
 }
 
 /// <summary>Client-generated identifiers.</summary>

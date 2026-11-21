@@ -6,7 +6,7 @@
     <AssemblyName>Transynq.Sdk</AssemblyName>
     <PackageId>Transynq.Sdk</PackageId>
     <Title>Transynq TMS .NET SDK</Title>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Description>Official .NET SDK for Transynq TMS, the transport management system for carriers, fleet operators, 3PLs, brokers and shippers: bookings, dispatch, live tracking, driver POD, invoicing and costing through the Transynq API.</Description>
     <PackageTags>transynq;tms;transport-management-system;transport-management-software;transport;logistics;freight;trucking;fleet-management;dispatch;3pl;proof-of-delivery;shipment-tracking;api-client;sdk;dotnet;csharp</PackageTags>
     <PackageReleaseNotes>https://github.com/transynq-io/transynq-sdk-dotnet/blob/main/CHANGELOG.md</PackageReleaseNotes>
